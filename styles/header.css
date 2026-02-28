@@ -1,23 +1,66 @@
-.body {
-  width: clamp(1100px, 100%, 1440px);
-  margin: 0 auto;
-}
-
 .header {
-  background-color: black;
-  position: relative;
-  z-index: 0;
 }
 
-.header::before {
+.header__hero {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.header__content {
+  width: 73%;
+}
+
+.header__name {
+  font-family: "ArchivoBlack", "OpenSans", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 400%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__profession {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 100%;
+}
+
+.header__about {
+  color: #fff;
+  font-size: 100%;
+}
+
+.header__image {
+  width: 27%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.header__nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.header__nav-link::after {
   content: "";
   position: absolute;
-  background: radial-gradient(
-    circle 300px at right 500px top 400px,
-    rgb(2, 238, 255),
-    transparent
-  );
+  left: 0;
+  bottom: -6px;
   width: 100%;
-  height: 100%;
-  z-index: -1;
+  height: 4px;
+  background: linear-gradient(to right, #6a5cff, #9d4edd);
+  transition: width 0.3s ease;
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
 }
