@@ -32,15 +32,19 @@
 
 body {
   width: clamp(1100px, 100%, 1440px);
-  margin: 0 auto;
+  margin: 0;
   font-family: "OpenSans", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: black;
+}
+
+.body__lights-container {
+  overflow: hidden;
   position: relative;
 }
 
-body::before {
+.body__lights-container::before {
   content: "";
   position: absolute;
   background: radial-gradient(circle 150px, rgb(2, 238, 255), transparent);
@@ -51,7 +55,7 @@ body::before {
   top: calc(-40%);
 }
 
-body::after {
+.body__lights-container::after {
   content: "";
   position: absolute;
   background: radial-gradient(circle 150px, rgb(255, 100, 255), transparent);

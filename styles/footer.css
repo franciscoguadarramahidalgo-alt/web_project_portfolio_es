@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+}
+
+.footer__contact {
+  color: #fff;
+}
+
+.footer__email {
+  color: #6d6dff;
+}
+
+.footer__container-icons {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
