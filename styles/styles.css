@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "OpenSans-Bold";
   src:
     url("../fonts/OpenSans-Bold.woff2") format("woff2"),
     url("../fonts/OpenSans-Bold.woff") format("woff");
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "OpenSans-Semibold";
   src:
     url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
     url("../fonts/OpenSans-SemiBold.woff") format("woff");
@@ -47,21 +47,20 @@ body {
 .body__lights-container::before {
   content: "";
   position: absolute;
-  background: radial-gradient(circle 150px, rgb(2, 238, 255, 0.3), transparent);
+  background: radial-gradient(circle 300px, rgb(2, 238, 255, 0.5), transparent);
   width: 100%;
   height: 100%;
   z-index: -1;
-  left: calc(20%);
-  top: calc(-40%);
+  left: calc(27%);
+  top: calc(-30%);
 }
 
 .body__lights-container::after {
   content: "";
   position: absolute;
-  background: radial-gradient(circle 150px, rgb(2, 238, 255, 0.3), transparent);
+  background: radial-gradient(circle 300px, rgb(2, 238, 255, 0.5), transparent);
   width: 100%;
   height: 100%;
   z-index: -1;
-  right: calc(20%);
-  bottom: calc(-40%);
+  bottom: calc(-43%);
 }

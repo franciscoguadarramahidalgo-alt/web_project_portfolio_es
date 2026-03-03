@@ -1,7 +1,7 @@
 .header__hero {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 20px;
 }
 
 .header__content {
@@ -15,27 +15,40 @@
   font-size: 400%;
   display: flex;
   flex-direction: column;
+  margin: 9.8% 0 0 13.2%;
 }
 
 .header__profession {
   color: rgba(255, 255, 255, 0.5);
   font-size: 100%;
+  margin: 1.7% 0 0 13.2%;
+}
+
+.header__job-title::after {
+  content: " | ";
 }
 
 .header__about {
   color: #fff;
   font-size: 100%;
+  margin: 3.4% 0 0 13.2%;
 }
 
 .header__image {
   width: 27%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 387/500;
   object-fit: cover;
+  margin: 2.8% 8.4% 0 0;
+}
+
+.header__nav {
+  margin: 3.4% 0 0 13.2%;
 }
 
 .header__nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 30px;
+  padding: 0;
 }
 
 .header__nav-link {
@@ -44,7 +57,7 @@
   text-decoration: none;
   color: #fff;
   font-size: 100%;
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: "OpenSans-Semibold", Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -52,11 +65,10 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -5px;
   width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #6a5cff, #9d4edd);
-  transition: width 0.3s ease;
+  height: 5px;
+  background: linear-gradient(to right, rgba(2, 69, 255), rgb(2, 238, 255));
 }
 
 .header__nav-link:hover::after {

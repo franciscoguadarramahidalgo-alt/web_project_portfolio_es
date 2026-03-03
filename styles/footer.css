@@ -4,16 +4,23 @@
 
 .footer__contact {
   color: #fff;
+  font-family: "ArchivoBlack", "OpenSans", sans-serif;
+  font-size: 40px;
+  margin: 7% 0 0 0;
 }
 
 .footer__email {
   color: #6d6dff;
+  margin: 1.4% 0 0 0;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .footer__container-icons {
   display: flex;
   justify-content: center;
-  gap: 7rem;
+  gap: 80px;
+  margin: 2.1% 0 7% 0;
 }
 
 a:hover {
