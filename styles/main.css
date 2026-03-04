@@ -10,7 +10,7 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
-  gap: 12.5%;
+  gap: clamp(78px, 8.3vw, 120px);
   padding: 0 8.4% 0 8.4%;
   margin: 3.5% 0 0 0;
 }
@@ -77,6 +77,7 @@
   width: 100%;
   background-color: #1c1c1c;
   aspect-ratio: 590/340;
+  min-height: 340px;
 }
 
 .content__project-title {

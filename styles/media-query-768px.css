@@ -1,0 +1,66 @@
+@media screen and (max-width: 1023px) {
+  .body__lights-container::before {
+    top: calc(-44%);
+  }
+
+  .body__lights-container::after {
+    bottom: calc(-47%);
+  }
+
+  .header__name {
+    margin: 8.4% 0 0 8.4%;
+  }
+
+  .header__profession {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0 0 8.4%;
+  }
+
+  .header__job-title::after {
+    content: "";
+  }
+
+  .header__about {
+    margin: 4.2% 0 0 8.4%;
+  }
+
+  .header__nav {
+    margin: 4.2% 0 0 8.4%;
+  }
+
+  .content__title {
+    margin: 10.4% 0 0 5.2%;
+  }
+
+  .content__abilities-list {
+    padding: 0 5.2% 0 5.2%;
+    margin: 5.2% 0 0 0;
+  }
+
+  .content__project-content {
+    aspect-ratio: unset;
+    height: auto;
+  }
+
+  .content__projects-grid {
+    flex-direction: column;
+    margin: 3.9% 5.2% 0 5.2%;
+  }
+
+  .content__project-card {
+    width: 100%;
+  }
+
+  .footer__contact {
+    margin: 10.4% 0 0 0;
+  }
+
+  .footer__email {
+    margin: 2.6% 0 0 0;
+  }
+
+  .footer__container-icons {
+    margin: 3.9% 0 14.6% 0;
+  }
+}

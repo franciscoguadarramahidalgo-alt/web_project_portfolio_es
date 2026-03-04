@@ -31,7 +31,7 @@
 }
 
 body {
-  width: clamp(1100px, 100%, 1440px);
+  width: clamp(320px, 100%, 1440px);
   margin: 0;
   font-family: "OpenSans", Arial, sans-serif;
   font-weight: 400;
